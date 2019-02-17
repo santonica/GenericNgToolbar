@@ -1,0 +1,47 @@
+li {
+  list-style: none;
+  display:inline-block;
+  border:1px dotted #a0a35d;
+  padding:4px;
+  margin:0;
+}
+
+
+toolbar-row{
+  background-color:gainsboro;
+  border-bottom:1px dotted darkgray;
+  display:block;
+  margin:0;
+  padding:0;
+}
+
+
+toolbar-item {
+  display:inline-block;
+  margin:10px;
+  padding:5px;
+  border-radius: 3px;
+  background-color:#a0a35d;
+  box-sizing: border-box;
+  border:1px solid #a0a35d;
+
+  &:hover {
+    background-color: #FFF;
+    border:1px solid orange;
+  }
+}
+
+toolbar-group {
+  display:inline-block;
+  background-color: gainsboro;
+  border-left: 3px ridge darkgrey;
+  border-right: 3px ridge darkgrey;
+}
+
+
+iframe {
+  width:100vw;
+  height:100vh;
+  overflow-y: auto;
+  overflow-x:hidden;
+}
