@@ -1,20 +1,86 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<generic-toolbar>
+  <toolbar-row>
+    <toolbar-item>
+      <button>Click Me!</button>
+    </toolbar-item>
+    <toolbar-group>
+      <toolbar-item #careers [targetURL]="'https://www.decisionengines.ai/careers/'" (click)="showSelection(careers.targetURL)" >
+        <i class="icon-amazon"></i>
+      </toolbar-item>
+      <toolbar-item #contact [targetURL]="'https://www.decisionengines.ai/contact-us/'" (click)="showSelection(contact.targetURL)">
+        <i class="icon-android"></i>
+      </toolbar-item>
+    </toolbar-group>
+    <toolbar-item>
+      <i class="icon-angry"></i>
+    </toolbar-item>
+  </toolbar-row>
+  <toolbar-row>
+    <toolbar-item>
+      <i class="icon-address-book"></i>
+    </toolbar-item>
+    <toolbar-item>
+      <i class="icon-alarm"></i>
+    </toolbar-item>
+    <toolbar-group>
+      <toolbar-item>
+        <i class="icon-attachment"></i>
+      </toolbar-item>
+      <toolbar-item>
+        <i class="icon-appleinc"></i>
+      </toolbar-item>
+    </toolbar-group>
+
+    <toolbar-item>
+      <i class="icon-binoculars"></i>
+    </toolbar-item>
+    <toolbar-group>
+      <toolbar-item>
+        <i class="icon-search"></i>
+      </toolbar-item>
+      <toolbar-item>
+        <i class="icon-bubble"></i>
+      </toolbar-item>
+    </toolbar-group>
+  </toolbar-row>
+  <toolbar-row>
+    <toolbar-group>
+      <toolbar-item>
+        <i class="icon-bin"></i>
+      </toolbar-item>
+      <toolbar-item>
+        <i class="icon-attachment"></i>
+      </toolbar-item>
+    </toolbar-group>
+    <toolbar-group>
+      <toolbar-item>
+        <i class="icon-bookmark"></i>
+      </toolbar-item>
+      <toolbar-item>
+        <i class="icon-basecamp"></i>
+      </toolbar-item>
+    </toolbar-group>
+    <toolbar-group>
+      <toolbar-item>
+        <i class="icon-circle-down"></i>
+      </toolbar-item>
+      <toolbar-item>
+        <i class="icon-checkmark"></i>
+      </toolbar-item>
+    </toolbar-group>
+    <toolbar-group>
+      <toolbar-item>
+        <i class="icon-briefcase"></i>
+      </toolbar-item>
+      <toolbar-item>
+        <i class="icon-chrome"></i>
+      </toolbar-item>
+    </toolbar-group>
+    <toolbar-item>
+      <i class="icon-camera"></i>
+    </toolbar-item>
+  </toolbar-row>
+</generic-toolbar>
+
+<iframe [src]="showURL" frameborder="0"></iframe>
 

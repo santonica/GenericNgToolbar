@@ -27,7 +27,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/style.css"
+
             ],
             "scripts": []
           },
@@ -130,7 +132,7 @@
       "root": "projects/common-lib",
       "sourceRoot": "projects/common-lib/src",
       "projectType": "library",
-      "prefix": "lib",
+      "prefix": "",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",

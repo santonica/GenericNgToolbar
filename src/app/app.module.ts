@@ -1,16 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppComponent } from './app.component';
-import { GenericToolbarComponent } from './generic-toolbar/generic-toolbar.component';
+import {AppComponent, IframeDirective} from './app.component';
+import {CommonLibModule} from 'common-lib';
+import {CommonModule} from '@angular/common';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    GenericToolbarComponent
+    IframeDirective
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    CommonModule,
+    CommonLibModule
   ],
   providers: [],
   bootstrap: [AppComponent]
